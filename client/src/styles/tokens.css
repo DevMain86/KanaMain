@@ -1,0 +1,9 @@
+:root {
+  --color-navy: #1a2e66;
+  --color-red: #bc002d;
+  --color-white: #ffffff;
+
+  --font-ui: 'Roboto', 'Kosugi', system-ui, sans-serif;
+  --font-kana: 'Kosugi', 'Roboto', system-ui, sans-serif;
+  --font-badge: 'Zen Old Mincho', 'Kosugi', serif;
+}
