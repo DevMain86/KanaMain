@@ -30,7 +30,7 @@ function parseCard(value: unknown, index: number): KanaCard {
 /** Checks raw JSON and returns typed cards, or throws a clear error. */
 export function parseCards(raw: unknown): KanaCard[] {
   if (!Array.isArray(raw)) throw new Error('Card data must be an array')
-  const cards = raw.map(parseCard)
+  const cards = raw.map((value, index) => parseCard(value, index))
   if (new Set(cards.map((card) => card.id)).size !== cards.length) {
     throw new Error('Card data contains duplicate ids')
   }
